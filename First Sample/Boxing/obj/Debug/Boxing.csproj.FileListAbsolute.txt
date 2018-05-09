@@ -1,0 +1,7 @@
+C:\Users\Otavio Menhart\source\repos\First Sample\Boxing\bin\Debug\Boxing.exe.config
+C:\Users\Otavio Menhart\source\repos\First Sample\Boxing\bin\Debug\Boxing.exe
+C:\Users\Otavio Menhart\source\repos\First Sample\Boxing\bin\Debug\Boxing.pdb
+C:\Users\Otavio Menhart\source\repos\First Sample\Boxing\obj\Debug\Boxing.csprojResolveAssemblyReference.cache
+C:\Users\Otavio Menhart\source\repos\First Sample\Boxing\obj\Debug\Boxing.csproj.CoreCompileInputs.cache
+C:\Users\Otavio Menhart\source\repos\First Sample\Boxing\obj\Debug\Boxing.exe
+C:\Users\Otavio Menhart\source\repos\First Sample\Boxing\obj\Debug\Boxing.pdb

@@ -1,0 +1,7 @@
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemIO_Example\bin\Debug\SystemIO_Example.exe.config
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemIO_Example\bin\Debug\SystemIO_Example.exe
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemIO_Example\bin\Debug\SystemIO_Example.pdb
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemIO_Example\obj\Debug\SystemIO_Example.csprojResolveAssemblyReference.cache
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemIO_Example\obj\Debug\SystemIO_Example.csproj.CoreCompileInputs.cache
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemIO_Example\obj\Debug\SystemIO_Example.exe
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemIO_Example\obj\Debug\SystemIO_Example.pdb

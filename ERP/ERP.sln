@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Financeiro", "ERP.Financeiro\ERP.Financeiro.csproj", "{7F376C6C-57CB-4DC0-93BD-D0CF791C21C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Financeiro.Funcoes", "ERP.Financeiro.Funcoes\ERP.Financeiro.Funcoes.csproj", "{7581B1A2-F299-44D0-A41A-912553FE8188}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F376C6C-57CB-4DC0-93BD-D0CF791C21C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F376C6C-57CB-4DC0-93BD-D0CF791C21C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F376C6C-57CB-4DC0-93BD-D0CF791C21C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F376C6C-57CB-4DC0-93BD-D0CF791C21C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7581B1A2-F299-44D0-A41A-912553FE8188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7581B1A2-F299-44D0-A41A-912553FE8188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7581B1A2-F299-44D0-A41A-912553FE8188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7581B1A2-F299-44D0-A41A-912553FE8188}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {125151E1-E799-405B-A79E-C39E30F0CD5A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+C:\Users\Otavio Menhart\source\repos\First Sample\ClassSample\bin\Debug\ClassSample.exe.config
+C:\Users\Otavio Menhart\source\repos\First Sample\ClassSample\bin\Debug\ClassSample.exe
+C:\Users\Otavio Menhart\source\repos\First Sample\ClassSample\bin\Debug\ClassSample.pdb
+C:\Users\Otavio Menhart\source\repos\First Sample\ClassSample\obj\Debug\ClassSample.csprojResolveAssemblyReference.cache
+C:\Users\Otavio Menhart\source\repos\First Sample\ClassSample\obj\Debug\ClassSample.csproj.CoreCompileInputs.cache
+C:\Users\Otavio Menhart\source\repos\First Sample\ClassSample\obj\Debug\ClassSample.exe
+C:\Users\Otavio Menhart\source\repos\First Sample\ClassSample\obj\Debug\ClassSample.pdb

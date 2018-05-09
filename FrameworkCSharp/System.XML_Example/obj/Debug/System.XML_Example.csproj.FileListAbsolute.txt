@@ -1,0 +1,45 @@
+D:\Aulas\.NET Framework 4.5\Fontes\NetFwk45\Framework\System.XML_Example\obj\Debug\System.XML_Example.csprojResolveAssemblyReference.cache
+D:\Aulas\.NET Framework 4.5\Fontes\NetFwk45\Framework\System.XML_Example\obj\Debug\System.XML_Example.Form1.resources
+D:\Aulas\.NET Framework 4.5\Fontes\NetFwk45\Framework\System.XML_Example\obj\Debug\System.XML_Example.Properties.Resources.resources
+D:\Aulas\.NET Framework 4.5\Fontes\NetFwk45\Framework\System.XML_Example\obj\Debug\System.XML_Example.csproj.GenerateResource.Cache
+D:\Aulas\.NET Framework 4.5\Fontes\NetFwk45\Framework\System.XML_Example\bin\Debug\System.XML_Example.exe.config
+D:\Aulas\.NET Framework 4.5\Fontes\NetFwk45\Framework\System.XML_Example\bin\Debug\System.XML_Example.exe
+D:\Aulas\.NET Framework 4.5\Fontes\NetFwk45\Framework\System.XML_Example\bin\Debug\System.XML_Example.pdb
+D:\Aulas\.NET Framework 4.5\Fontes\NetFwk45\Framework\System.XML_Example\obj\Debug\System.XML_Example.exe
+D:\Aulas\.NET Framework 4.5\Fontes\NetFwk45\Framework\System.XML_Example\obj\Debug\System.XML_Example.pdb
+D:\Aulas\.NET Framework 4.5\Fontes\NetFwk45\Framework\System.XML_Example\obj\Debug\System.XML_Example.Form2.resources
+D:\Aulas\.NET Framework 4.5\Fontes\NetFwk45\Framework\System.XML_Example\obj\Debug\System.XML_Example.Form3.resources
+D:\devmedia\NETFwk\Fontes\NetFwk45_WORK\Framework\System.XML_Example\bin\Debug\System.XML_Example.exe.config
+D:\devmedia\NETFwk\Fontes\NetFwk45_WORK\Framework\System.XML_Example\obj\Debug\System.XML_Example.exe
+D:\devmedia\NETFwk\Fontes\NetFwk45_WORK\Framework\System.XML_Example\obj\Debug\System.XML_Example.pdb
+D:\devmedia\NETFwk\Fontes\NetFwk45_WORK\Framework\System.XML_Example\obj\Debug\System.XML_Example.csprojResolveAssemblyReference.cache
+D:\devmedia\NETFwk\Fontes\NetFwk45_WORK\Framework\System.XML_Example\obj\Debug\System.XML_Example.Form1.resources
+D:\devmedia\NETFwk\Fontes\NetFwk45_WORK\Framework\System.XML_Example\obj\Debug\System.XML_Example.Form2.resources
+D:\devmedia\NETFwk\Fontes\NetFwk45_WORK\Framework\System.XML_Example\obj\Debug\System.XML_Example.Form3.resources
+D:\devmedia\NETFwk\Fontes\NetFwk45_WORK\Framework\System.XML_Example\obj\Debug\System.XML_Example.Properties.Resources.resources
+D:\devmedia\NETFwk\Fontes\NetFwk45_WORK\Framework\System.XML_Example\obj\Debug\System.XML_Example.csproj.GenerateResource.Cache
+D:\devmedia\NETFwk\Fontes\NetFwk45_WORK\Framework\System.XML_Example\bin\Debug\System.XML_Example.exe
+D:\devmedia\NETFwk\Fontes\NetFwk45_WORK\Framework\System.XML_Example\bin\Debug\System.XML_Example.pdb
+D:\devmedia\NETFwk\Fontes\NetFwk45\Framework\System.XML_Example\bin\Debug\System.XML_Example.exe.config
+D:\devmedia\NETFwk\Fontes\NetFwk45\Framework\System.XML_Example\obj\Debug\System.XML_Example.exe
+D:\devmedia\NETFwk\Fontes\NetFwk45\Framework\System.XML_Example\obj\Debug\System.XML_Example.pdb
+D:\devmedia\NETFwk\Fontes\NetFwk45\Framework\System.XML_Example\obj\Debug\System.XML_Example.csprojResolveAssemblyReference.cache
+D:\devmedia\NETFwk\Fontes\NetFwk45\Framework\System.XML_Example\obj\Debug\System.XML_Example.Form1.resources
+D:\devmedia\NETFwk\Fontes\NetFwk45\Framework\System.XML_Example\obj\Debug\System.XML_Example.Form2.resources
+D:\devmedia\NETFwk\Fontes\NetFwk45\Framework\System.XML_Example\obj\Debug\System.XML_Example.Form3.resources
+D:\devmedia\NETFwk\Fontes\NetFwk45\Framework\System.XML_Example\obj\Debug\System.XML_Example.Properties.Resources.resources
+D:\devmedia\NETFwk\Fontes\NetFwk45\Framework\System.XML_Example\obj\Debug\System.XML_Example.csproj.GenerateResource.Cache
+D:\devmedia\NETFwk\Fontes\NetFwk45\Framework\System.XML_Example\bin\Debug\System.XML_Example.exe
+D:\devmedia\NETFwk\Fontes\NetFwk45\Framework\System.XML_Example\bin\Debug\System.XML_Example.pdb
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\System.XML_Example\bin\Debug\System.XML_Example.exe.config
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\System.XML_Example\bin\Debug\System.XML_Example.exe
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\System.XML_Example\bin\Debug\System.XML_Example.pdb
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\System.XML_Example\obj\Debug\System.XML_Example.csprojResolveAssemblyReference.cache
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\System.XML_Example\obj\Debug\System.XML_Example.Form1.resources
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\System.XML_Example\obj\Debug\System.XML_Example.Form2.resources
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\System.XML_Example\obj\Debug\System.XML_Example.Form3.resources
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\System.XML_Example\obj\Debug\System.XML_Example.Properties.Resources.resources
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\System.XML_Example\obj\Debug\System.XML_Example.csproj.GenerateResource.cache
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\System.XML_Example\obj\Debug\System.XML_Example.csproj.CoreCompileInputs.cache
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\System.XML_Example\obj\Debug\System.XML_Example.exe
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\System.XML_Example\obj\Debug\System.XML_Example.pdb

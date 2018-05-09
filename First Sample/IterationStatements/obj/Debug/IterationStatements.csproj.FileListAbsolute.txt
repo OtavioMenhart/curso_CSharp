@@ -1,0 +1,7 @@
+C:\Users\Otavio Menhart\source\repos\First Sample\IterationStatements\bin\Debug\IterationStatements.exe.config
+C:\Users\Otavio Menhart\source\repos\First Sample\IterationStatements\bin\Debug\IterationStatements.exe
+C:\Users\Otavio Menhart\source\repos\First Sample\IterationStatements\bin\Debug\IterationStatements.pdb
+C:\Users\Otavio Menhart\source\repos\First Sample\IterationStatements\obj\Debug\IterationStatements.csprojResolveAssemblyReference.cache
+C:\Users\Otavio Menhart\source\repos\First Sample\IterationStatements\obj\Debug\IterationStatements.csproj.CoreCompileInputs.cache
+C:\Users\Otavio Menhart\source\repos\First Sample\IterationStatements\obj\Debug\IterationStatements.exe
+C:\Users\Otavio Menhart\source\repos\First Sample\IterationStatements\obj\Debug\IterationStatements.pdb

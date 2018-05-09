@@ -1,0 +1,12 @@
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemGlobalization_Example\bin\Debug\SystemGlobalization_Example.exe.config
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemGlobalization_Example\bin\Debug\SystemGlobalization_Example.exe
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemGlobalization_Example\bin\Debug\SystemGlobalization_Example.pdb
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemGlobalization_Example\obj\Debug\SystemGlobalization_Example.csprojResolveAssemblyReference.cache
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemGlobalization_Example\obj\Debug\SystemGlobalization_Example.csproj.CoreCompileInputs.cache
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemGlobalization_Example\obj\Debug\SystemGlobalization_Example.exe
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemGlobalization_Example\obj\Debug\SystemGlobalization_Example.pdb
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemGlobalization_Example\obj\Debug\SystemGlobalization_Example.Main.en-US.resources
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemGlobalization_Example\obj\Debug\SystemGlobalization_Example.csproj.GenerateResource.cache
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemGlobalization_Example\bin\Debug\en-US\SystemGlobalization_Example.resources.dll
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemGlobalization_Example\obj\Debug\en-US\SystemGlobalization_Example.resources.dll
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemGlobalization_Example\obj\Debug\SystemGlobalization_Example.Main.resources

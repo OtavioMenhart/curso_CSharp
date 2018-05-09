@@ -1,0 +1,7 @@
+C:\Users\Otavio Menhart\source\repos\First Sample\AnonymousTypes\bin\Debug\AnonymousTypes.exe.config
+C:\Users\Otavio Menhart\source\repos\First Sample\AnonymousTypes\bin\Debug\AnonymousTypes.exe
+C:\Users\Otavio Menhart\source\repos\First Sample\AnonymousTypes\bin\Debug\AnonymousTypes.pdb
+C:\Users\Otavio Menhart\source\repos\First Sample\AnonymousTypes\obj\Debug\AnonymousTypes.csprojResolveAssemblyReference.cache
+C:\Users\Otavio Menhart\source\repos\First Sample\AnonymousTypes\obj\Debug\AnonymousTypes.csproj.CoreCompileInputs.cache
+C:\Users\Otavio Menhart\source\repos\First Sample\AnonymousTypes\obj\Debug\AnonymousTypes.exe
+C:\Users\Otavio Menhart\source\repos\First Sample\AnonymousTypes\obj\Debug\AnonymousTypes.pdb

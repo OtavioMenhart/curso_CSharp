@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Clientes>
+    <Codigo>1</Codigo>
+    <Nome>Otavio Menhart</Nome>
+    <Telefone>11111111111</Telefone>
+    <Email>otaviomenhart@hotmail.com</Email>
+  </Clientes>
+</NewDataSet>

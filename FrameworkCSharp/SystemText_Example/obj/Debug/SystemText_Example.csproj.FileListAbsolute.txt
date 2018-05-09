@@ -1,0 +1,7 @@
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemText_Example\bin\Debug\SystemText_Example.exe.config
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemText_Example\bin\Debug\SystemText_Example.exe
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemText_Example\bin\Debug\SystemText_Example.pdb
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemText_Example\obj\Debug\SystemText_Example.csprojResolveAssemblyReference.cache
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemText_Example\obj\Debug\SystemText_Example.csproj.CoreCompileInputs.cache
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemText_Example\obj\Debug\SystemText_Example.exe
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemText_Example\obj\Debug\SystemText_Example.pdb

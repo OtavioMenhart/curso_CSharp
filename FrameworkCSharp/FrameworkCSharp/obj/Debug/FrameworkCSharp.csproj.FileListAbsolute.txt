@@ -1,0 +1,7 @@
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\FrameworkCSharp\bin\Debug\FrameworkCSharp.exe.config
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\FrameworkCSharp\bin\Debug\FrameworkCSharp.exe
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\FrameworkCSharp\bin\Debug\FrameworkCSharp.pdb
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\FrameworkCSharp\obj\Debug\FrameworkCSharp.csprojResolveAssemblyReference.cache
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\FrameworkCSharp\obj\Debug\FrameworkCSharp.csproj.CoreCompileInputs.cache
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\FrameworkCSharp\obj\Debug\FrameworkCSharp.exe
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\FrameworkCSharp\obj\Debug\FrameworkCSharp.pdb

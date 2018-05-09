@@ -1,0 +1,7 @@
+C:\Users\Otavio Menhart\source\repos\First Sample\Firs Sample\bin\Debug\Firs Sample.exe.config
+C:\Users\Otavio Menhart\source\repos\First Sample\Firs Sample\bin\Debug\Firs Sample.exe
+C:\Users\Otavio Menhart\source\repos\First Sample\Firs Sample\bin\Debug\Firs Sample.pdb
+C:\Users\Otavio Menhart\source\repos\First Sample\Firs Sample\obj\Debug\First Sample.csprojResolveAssemblyReference.cache
+C:\Users\Otavio Menhart\source\repos\First Sample\Firs Sample\obj\Debug\First Sample.csproj.CoreCompileInputs.cache
+C:\Users\Otavio Menhart\source\repos\First Sample\Firs Sample\obj\Debug\Firs Sample.exe
+C:\Users\Otavio Menhart\source\repos\First Sample\Firs Sample\obj\Debug\Firs Sample.pdb

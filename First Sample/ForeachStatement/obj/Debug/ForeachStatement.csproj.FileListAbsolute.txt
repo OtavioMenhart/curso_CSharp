@@ -1,0 +1,7 @@
+C:\Users\Otavio Menhart\source\repos\First Sample\ForeachStatement\bin\Debug\ForeachStatement.exe.config
+C:\Users\Otavio Menhart\source\repos\First Sample\ForeachStatement\bin\Debug\ForeachStatement.exe
+C:\Users\Otavio Menhart\source\repos\First Sample\ForeachStatement\bin\Debug\ForeachStatement.pdb
+C:\Users\Otavio Menhart\source\repos\First Sample\ForeachStatement\obj\Debug\ForeachStatement.csprojResolveAssemblyReference.cache
+C:\Users\Otavio Menhart\source\repos\First Sample\ForeachStatement\obj\Debug\ForeachStatement.csproj.CoreCompileInputs.cache
+C:\Users\Otavio Menhart\source\repos\First Sample\ForeachStatement\obj\Debug\ForeachStatement.exe
+C:\Users\Otavio Menhart\source\repos\First Sample\ForeachStatement\obj\Debug\ForeachStatement.pdb

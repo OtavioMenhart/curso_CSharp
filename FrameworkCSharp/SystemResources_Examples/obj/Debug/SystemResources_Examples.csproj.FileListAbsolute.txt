@@ -1,0 +1,11 @@
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemResources_Examples\bin\Debug\SystemResources_Examples.exe.config
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemResources_Examples\bin\Debug\SystemResources_Examples.exe
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemResources_Examples\bin\Debug\SystemResources_Examples.pdb
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemResources_Examples\bin\Debug\en-Us\SystemResources_Examples.resources.dll
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemResources_Examples\obj\Debug\SystemResources_Examples.Main.resources
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemResources_Examples\obj\Debug\SystemResources_Examples.Main.en-Us.resources
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemResources_Examples\obj\Debug\SystemResources_Examples.csproj.GenerateResource.cache
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemResources_Examples\obj\Debug\SystemResources_Examples.csproj.CoreCompileInputs.cache
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemResources_Examples\obj\Debug\en-Us\SystemResources_Examples.resources.dll
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemResources_Examples\obj\Debug\SystemResources_Examples.exe
+C:\Users\Otavio Menhart\source\repos\FrameworkCSharp\SystemResources_Examples\obj\Debug\SystemResources_Examples.pdb

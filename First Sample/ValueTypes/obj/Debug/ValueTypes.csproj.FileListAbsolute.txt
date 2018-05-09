@@ -1,0 +1,7 @@
+C:\Users\Otavio Menhart\source\repos\First Sample\ValueTypes\bin\Debug\ValueTypes.exe.config
+C:\Users\Otavio Menhart\source\repos\First Sample\ValueTypes\bin\Debug\ValueTypes.exe
+C:\Users\Otavio Menhart\source\repos\First Sample\ValueTypes\bin\Debug\ValueTypes.pdb
+C:\Users\Otavio Menhart\source\repos\First Sample\ValueTypes\obj\Debug\ValueTypes.csprojResolveAssemblyReference.cache
+C:\Users\Otavio Menhart\source\repos\First Sample\ValueTypes\obj\Debug\ValueTypes.csproj.CoreCompileInputs.cache
+C:\Users\Otavio Menhart\source\repos\First Sample\ValueTypes\obj\Debug\ValueTypes.exe
+C:\Users\Otavio Menhart\source\repos\First Sample\ValueTypes\obj\Debug\ValueTypes.pdb
