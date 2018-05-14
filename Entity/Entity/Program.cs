@@ -10,6 +10,53 @@ namespace Entity
     {
         static void Main(string[] args)
         {
+            
+        }
+
+        private static void ConsultarClientesLinq2()
+        {
+            var db = new CADASTROEntities();
+            var qry = from c in db.CONTATOS
+                      select new { Nome = c.CLIENTE.NomeCliente, Contato = c.Contato1 };
+            foreach (var cli in qry)
+            {
+                Console.WriteLine(cli.Nome + " - " + cli.Contato);
+            }
+            Console.ReadLine();
+        }
+
+        private static void ConsultarClientesLinq()
+        {
+            var db = new CADASTROEntities();
+            var qry = from cli in db.CLIENTES
+                      where cli.NomeCliente.Contains("a")
+                      orderby cli.IdCliente descending
+                      select cli;
+            foreach (var c in qry)
+            {
+                Console.WriteLine(c.IdCliente.ToString() + " - " + c.NomeCliente + " - " + c.Email);
+            }
+            Console.ReadLine();
+        }
+
+        private static void ConsultarClientes()
+        {
+            var db = new CADASTROEntities();
+            foreach (var cliente in db.CLIENTES)
+            {
+                Console.WriteLine(cliente.NomeCliente);
+                foreach (var cont in cliente.CONTATOS)
+                {
+                    Console.WriteLine(cont.Tipo);
+                    Console.WriteLine(cont.Contato1);
+                }
+            }
+            Console.ReadLine();
+        }
+
+        #region Inserção
+        private static void Inserir()
+        {
             var db = new CADASTROEntities();
             var cli = new CLIENTE()
             {
@@ -34,5 +81,6 @@ namespace Entity
             Console.WriteLine("Registros inseridos com sucesso");
             Console.ReadLine();
         }
+        #endregion
     }
 }
