@@ -34,7 +34,7 @@
             var id = $('#ID').val();
             $.getJSON(uri + '/' + id)
                 .done(function (data) { 
-                    $('#cliente').text(formatar(data));
+                    $('#cliente').html("<h2 style='color:red'>"+formatar(data)+"</h2>");
                 })
 
         }
