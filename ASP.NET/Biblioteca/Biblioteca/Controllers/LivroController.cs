@@ -35,7 +35,7 @@ namespace Biblioteca.Controllers
 
         // POST: Livro/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Livro livro)
         {
             try
             {
