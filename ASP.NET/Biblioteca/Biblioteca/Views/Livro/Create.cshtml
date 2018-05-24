@@ -27,7 +27,7 @@
 
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="material-icons" prefix="">mode_edit</i>
+                    <i class="material-icons prefix">mode_edit</i>
                     @Html.EditorFor(model => model.Descricao, new { htmlAttributes = new { @class = "form-library_books" } })
                     @Html.ValidationMessageFor(model => model.Descricao, "", new { @class = "text-danger" })
                     @Html.LabelFor(model => model.Descricao, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -36,7 +36,7 @@
 
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="material-icons" prefix="">toc</i>
+                    <i class="material-icons prefix">toc</i>
                     @Html.EditorFor(model => model.TotalPaginas, new { htmlAttributes = new { @class = "form-library_books" } })
                     @Html.ValidationMessageFor(model => model.TotalPaginas, "", new { @class = "text-danger" })
                     @Html.LabelFor(model => model.TotalPaginas, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -45,7 +45,7 @@
 
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="material-icons" prefix="">Library_add</i>
+                    <i class="material-icons prefix">add</i>
                     @Html.EditorFor(model => model.Quantidade, new { htmlAttributes = new { @class = "form-library_books" } })
                     @Html.ValidationMessageFor(model => model.Quantidade, "", new { @class = "text-danger" })
                     @Html.LabelFor(model => model.Quantidade, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -53,13 +53,13 @@
             </div>
 
             <div class="row">
-                <div class="input-field col s4">
-                    @Html.DropDownListFor(model => model.AutorId, new SelectList(ViewBag.Autores, "Value", "Text", "Selecione um autor"))
+                <div class="input-field col s3">
+                    @Html.DropDownListFor(model => model.AutorId, new SelectList(ViewBag.Autores, "Value", "Text"), "Selecione um autor")
                 </div>
             </div>
             <div class="row">
-                <div class="input-field col s4">
-                    @Html.DropDownListFor(model => model.CategoriaId, new SelectList(ViewBag.Categorias, "Value", "Text", "Selecione uma categoria"))
+                <div class="input-field col s3">
+                    @Html.DropDownListFor(model => model.CategoriaId, new SelectList(ViewBag.Categorias, "Value", "Text"), "Selecione uma categoria")
                 </div>
             </div>
             <div class="form-group center-align">

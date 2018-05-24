@@ -1,8 +1,11 @@
 ﻿using Biblioteca.DataContext;
+using Biblioteca.Helpers;
 using Biblioteca.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -14,46 +17,22 @@ namespace Biblioteca.Controllers
         // GET: Livro
         public ActionResult Index()
         {
-            List<Livro> lLivros = new List<Livro>();
-            lLivros = db.Livros.ToList();
-            return View(lLivros);
+            return View();
         }
 
         // GET: Livro/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details()
         {
-            return View();
+            List<Livro> livros = db.Livros.ToList();
+
+            return View(livros);
         }
 
         // GET: Livro/Create
         public ActionResult Create()
-        {
-            List<Autor> lAutores = new List<Autor>();
-            lAutores = db.Autores.ToList();
-
-            List<Categoria> lCategoria = new List<Categoria>();
-            lCategoria = db.Categorias.ToList();
-
-            List<SelectListItem> listaCategorias = lCategoria.ConvertAll(a => {
-                return new SelectListItem()
-                {
-                    Text = a.Nome,
-                    Value = a.Id.ToString(),
-                    Selected = false
-                };
-            });
-
-
-            List<SelectListItem> listaAutores = lAutores.ConvertAll(a => {
-                return new SelectListItem()
-                {
-                    Text = a.Nome,
-                    Value = a.Id.ToString(),
-                    Selected = false
-                };
-                });
-            @ViewBag.Autores = listaAutores;
-            @ViewBag.Categorias = listaCategorias;
+        {            
+            @ViewBag.Autores = RetornaSelectListItem.Autores();
+            @ViewBag.Categorias = RetornaSelectListItem.Categorias();
 
             return View();
         }
@@ -71,6 +50,8 @@ namespace Biblioteca.Controllers
                     db.SaveChanges();
                     return RedirectToAction("Index");
                 }
+                @ViewBag.Autores = RetornaSelectListItem.Autores();
+                @ViewBag.Categorias = RetornaSelectListItem.Categorias();
                 return View(livro);
                 
             }
@@ -81,20 +62,37 @@ namespace Biblioteca.Controllers
         }
 
         // GET: Livro/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit(int? id)
         {
-            return View();
+            if(id.Equals(0))
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+
+            Livro livro = db.Livros.Find(id);
+
+            @ViewBag.Autores = RetornaSelectListItem.Autores();
+            @ViewBag.Categorias = RetornaSelectListItem.Categorias();
+
+            return View(livro);
         }
 
         // POST: Livro/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(Livro livro)
         {
             try
             {
                 // TODO: Add update logic here
-
-                return RedirectToAction("Index");
+                if (ModelState.IsValid)
+                {
+                    db.Entry(livro).State = EntityState.Modified;
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+                @ViewBag.Autores = RetornaSelectListItem.Autores();
+                @ViewBag.Categorias = RetornaSelectListItem.Categorias();
+                return View(livro);
             }
             catch
             {
