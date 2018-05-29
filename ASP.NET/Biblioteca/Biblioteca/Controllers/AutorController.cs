@@ -2,6 +2,7 @@
 using Biblioteca.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -18,9 +19,10 @@ namespace Biblioteca.Controllers
         }
 
         // GET: Autor/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details()
         {
-            return View();
+            List<Autor> autores = db.Autores.ToList();
+            return View(autores);
         }
 
         // GET: Autor/Create
@@ -46,23 +48,26 @@ namespace Biblioteca.Controllers
         // GET: Autor/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            Autor autor = db.Autores.Find(id);
+            if (autor.Id == null)
+            {
+                return HttpNotFound();
+            }
+            return View(autor);
         }
 
         // POST: Autor/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(Autor autor)
         {
-            try
+            if (ModelState.IsValid)
             {
-                // TODO: Add update logic here
-
+                db.Entry(autor).State = EntityState.Modified;
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            catch
-            {
-                return View();
-            }
+            return View(autor);
         }
 
         // GET: Autor/Delete/5
