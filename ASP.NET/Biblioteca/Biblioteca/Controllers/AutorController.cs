@@ -71,25 +71,20 @@ namespace Biblioteca.Controllers
         }
 
         // GET: Autor/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+        //public ActionResult Delete(int id)
+        //{
+        //    return View();
+        //}
 
         // POST: Autor/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(int id)
         {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            Autor autor = db.Autores.Find(id);
+            db.Autores.Attach(autor);
+            db.Autores.Remove(autor);
+            db.SaveChanges();
+            return Content("Autor removido com sucesso");
         }
     }
 }
