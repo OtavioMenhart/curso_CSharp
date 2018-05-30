@@ -1,0 +1,92 @@
+﻿@model IEnumerable<Biblioteca.Models.Categoria>
+
+@{
+    /**/
+
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Lista de categorias</h2>
+
+<p>
+    @Html.ActionLink("Cadastrar categoria", "Create", null, new { @class = "waves-effect waves-light btn" })
+</p>
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "__AjaxAntiForgeryForm " }))
+{
+    @Html.AntiForgeryToken()
+
+    <table class="responsive-table striped bordered">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                Editar
+            </th>
+            <th>Excluir</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    <a class="btn-floating btn-large waves-effect waves-light red" href="@Url.Action("Edit", "Categoria",new {id = item.Id })">
+                        <i class="material-icons">mode_edit</i>
+                    </a>
+                </td>
+                <td>
+                    <a data-tag="excluirCategoria" class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#modal" data-id="@item.Id"><i class="material-icons">delete</i></a>
+                </td>
+            </tr>
+        }
+
+    </table>
+}
+
+<!-- Modal Structure -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h4>Você deseja excluir esta categoria?</h4>
+        <p>Ao clicar no botão Confirmar, você não poderá reverter a situação.</p>
+    </div>
+    <div class="modal-footer">
+        @Html.AntiForgeryToken()
+        <button id="btnConfirmarExclusao" type="button" class="modal-action modal-close waves-effect waves-green btn-flat">Confirmar</button>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var categoriaId;
+    $('[data-tag="excluirCategoria"]').click(function () {
+        categoriaId = $(this).attr("data-id");
+    });
+
+    $('#btnConfirmarExclusao').click(function () {
+        var form = $('#__AjaxAntiForgeryForm');
+        var token = $('input[name = "__RequestVerificationToken"]', form).val();
+
+        $.ajax({
+            url: 'Delete',
+            type: 'post',
+            data: {
+                __RequestVerificationToken: token,
+                id: categoriaId
+            },
+            success: function (resp) {
+                M.toast({ html: resp });
+                setTimeout(function () {
+                    window.location.reload();
+                }, 2000);
+
+            },
+            error: function (erro) {
+                console.log(erro);
+            }
+        });
+    });
+</script>
