@@ -48,23 +48,26 @@ namespace Biblioteca.Controllers
         // GET: Categoria/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            Categoria categoria = db.Categorias.Find(id);
+            if(categoria == null)
+            {
+                return HttpNotFound();
+            }
+            return View(categoria);
         }
 
         // POST: Categoria/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(Categoria categoria)
         {
-            try
+            if (ModelState.IsValid)
             {
-                // TODO: Add update logic here
-
+                db.Entry(categoria).State = EntityState.Modified;
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            catch
-            {
-                return View();
-            }
+            return View(categoria);
         }
 
         // GET: Categoria/Delete/5
