@@ -12,5 +12,7 @@ namespace Biblioteca.DataContext
         public DbSet<Livro> Livros { get; set; }
         public DbSet<Autor> Autores { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Emprestimo> Emprestimos { get; set; }
     }
 }

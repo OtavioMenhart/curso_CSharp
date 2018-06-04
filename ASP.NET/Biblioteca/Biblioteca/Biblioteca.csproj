@@ -150,6 +150,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AutorController.cs" />
     <Compile Include="Controllers\CategoriaController.cs" />
+    <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LivroController.cs" />
     <Compile Include="DataContext\BibliotecaDB.cs" />
@@ -157,9 +158,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\RetornaSelectListItem.cs" />
+    <Compile Include="Helpers\Valida.cs" />
+    <Compile Include="Helpers\ValidacaoCPF.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Autor.cs" />
     <Compile Include="Models\Categoria.cs" />
+    <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Emprestimo.cs" />
     <Compile Include="Models\Livro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -210,6 +215,8 @@
     <Content Include="Views\Categoria\Index.cshtml" />
     <Content Include="Views\Categoria\Details.cshtml" />
     <Content Include="Views\Categoria\Edit.cshtml" />
+    <Content Include="Views\Cliente\Create.cshtml" />
+    <Content Include="Views\Cliente\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
