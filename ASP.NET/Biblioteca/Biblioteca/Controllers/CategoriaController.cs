@@ -73,23 +73,11 @@ namespace Biblioteca.Controllers
         // GET: Categoria/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
-        }
-
-        // POST: Categoria/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            Categoria categoria = db.Categorias.Find(id);
+            db.Categorias.Attach(categoria);
+            db.Categorias.Remove(categoria);
+            db.SaveChanges();
+            return Content("Remoção realizada");
         }
     }
 }
