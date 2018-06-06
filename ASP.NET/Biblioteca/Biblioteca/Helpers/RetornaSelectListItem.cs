@@ -15,7 +15,8 @@ namespace Biblioteca.Helpers
         {
             List<Autor> lAutores = new List<Autor>();
             lAutores = db.Autores.ToList();
-            List<SelectListItem> listaAutores = lAutores.ConvertAll(a => {
+            List<SelectListItem> listaAutores = lAutores.ConvertAll(a =>
+            {
                 return new SelectListItem()
                 {
                     Text = a.Nome,
@@ -30,7 +31,8 @@ namespace Biblioteca.Helpers
         {
             List<Categoria> lCategoria = new List<Categoria>();
             lCategoria = db.Categorias.ToList();
-            List<SelectListItem> listaCategorias = lCategoria.ConvertAll(a => {
+            List<SelectListItem> listaCategorias = lCategoria.ConvertAll(a =>
+            {
                 return new SelectListItem()
                 {
                     Text = a.Nome,
@@ -39,6 +41,35 @@ namespace Biblioteca.Helpers
                 };
             });
             return listaCategorias;
+        }
+
+        public static List<SelectListItem> LivrosNaoEmprestados(int id = 0)
+        {
+            var livros = db.Livros.Where(l => l.Quantidade > 0).ToList();
+            List<SelectListItem> item = livros.ConvertAll(l =>
+            {
+                return new SelectListItem()
+                {
+                    Text = l.Nome,
+                    Value = l.Id.ToString(),
+                    Selected = (l.Id == id)
+                };
+            });
+            return item;
+        }
+
+        public static List<SelectListItem> Clientes (int id = 0)
+        {
+            var clientes = db.Clientes.ToList();
+            List<SelectListItem> item = clientes.ConvertAll(c =>
+            {
+                return new SelectListItem() {
+                    Text = c.Nome,
+                    Value = c.Id.ToString(),
+                    Selected = (c.Id == id)
+                };
+            });
+            return item;
         }
     }
 }

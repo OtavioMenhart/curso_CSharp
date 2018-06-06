@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col s12 m6">
+        <div class="card light-blue darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Cadastrar Empréstimo</span>
+                <p>
+                    Cadastre um novo empréstimo
+                </p>
+            </div>
+            <div class="card-action">
+                @Html.ActionLink("Cadastrar", "Create")
+            </div>
+        </div>
+    </div>
+
+    <div class="col s12 m6">
+        <div class="card light-blue darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Listar Empréstimos</span>
+                <p>
+                    Visualize todos os empréstimos
+                </p>
+            </div>
+            <div class="card-action">
+                @Html.ActionLink("Listar", "Details")
+            </div>
+        </div>
+    </div>
+</div>
+

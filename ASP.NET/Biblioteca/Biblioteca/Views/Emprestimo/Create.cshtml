@@ -1,0 +1,58 @@
+﻿@model Biblioteca.Models.Emprestimo
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Cadastrar Novo Emprestimo de Livro</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="row">
+            <div class="input-field col s8">
+                <i class="material-icons prefix">view_list</i>
+                @Html.DropDownListFor(model=>model.ClienteId, new SelectList(ViewBag.Clientes, "Value", "Text"),"Selecione um cliente")
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s8">
+                <i class="material-icons prefix">view_list</i>
+                @Html.DropDownListFor(model => model.LivroID, new SelectList(ViewBag.Livros, "Value", "Text"), "Selecione um livro")
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="input-field col s8">
+                @Html.EditorFor(model => model.DataEmprestimo, new { htmlAttributes = new { @class = "alarm_on data" } })
+                @Html.ValidationMessageFor(model => model.DataEmprestimo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s8">
+                @Html.EditorFor(model => model.DataDevolucao, new { htmlAttributes = new { @class = "alarm_off data" } })
+                @Html.ValidationMessageFor(model => model.DataDevolucao, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group center-align">
+            <button class="btn waves-effect waves-light" type="submit">
+                Cadastrar
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+    </div>
+}
+
+@*<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>*@
