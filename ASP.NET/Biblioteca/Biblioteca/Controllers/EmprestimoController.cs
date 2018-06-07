@@ -19,9 +19,10 @@ namespace Biblioteca.Controllers
         }
 
         // GET: Emprestimo/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details()
         {
-            return View();
+            List<Emprestimo> lEmprestimoNaoDevolvido = db.Emprestimos.Where(e => e.LivroFoiDevolvido.Equals(false)).ToList();
+            return View(lEmprestimoNaoDevolvido);
         }
 
         // GET: Emprestimo/Create
@@ -39,8 +40,9 @@ namespace Biblioteca.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Emprestimos.Add(emprestimo);
-                db.SaveChanges();
+                emprestimo.CadastrarEmprestimo(emprestimo);
+                //db.Emprestimos.Add(emprestimo);
+                //db.SaveChanges();
                 return RedirectToAction("Index");
             }
             @ViewBag.Clientes = RetornaSelectListItem.Clientes();
