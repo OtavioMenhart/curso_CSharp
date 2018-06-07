@@ -40,9 +40,8 @@ namespace Biblioteca.Controllers
         {
             if (ModelState.IsValid)
             {
+                emprestimo.DataDeEntregaDoLivro = DateTime.Now;
                 emprestimo.CadastrarEmprestimo(emprestimo);
-                //db.Emprestimos.Add(emprestimo);
-                //db.SaveChanges();
                 return RedirectToAction("Index");
             }
             @ViewBag.Clientes = RetornaSelectListItem.Clientes();
@@ -53,23 +52,26 @@ namespace Biblioteca.Controllers
         // GET: Emprestimo/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            Emprestimo emprestimo = db.Emprestimos.Find(id);
+            if(emprestimo == null)
+            {
+                return HttpNotFound();
+            }
+            emprestimo.DataDeEntregaDoLivro = DateTime.Now;
+            return View(emprestimo);
         }
 
         // POST: Emprestimo/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(Emprestimo emprestimo)
         {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {   
+                emprestimo.CadastrarDevolucao(emprestimo);
+                return View("Extrato", emprestimo);
             }
-            catch
-            {
-                return View();
-            }
+            
+            return View(emprestimo);
         }
 
         // GET: Emprestimo/Delete/5

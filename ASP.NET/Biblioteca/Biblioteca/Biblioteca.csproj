@@ -158,9 +158,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\Calcula.cs" />
     <Compile Include="Helpers\RetornaSelectListItem.cs" />
     <Compile Include="Helpers\Valida.cs" />
     <Compile Include="Helpers\ValidacaoCPF.cs" />
+    <Compile Include="Migrations\201806071645275_Alterado.cs" />
+    <Compile Include="Migrations\201806071645275_Alterado.Designer.cs">
+      <DependentUpon>201806071645275_Alterado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Autor.cs" />
     <Compile Include="Models\Categoria.cs" />
@@ -221,6 +226,8 @@
     <Content Include="Views\Emprestimo\Create.cshtml" />
     <Content Include="Views\Emprestimo\Index.cshtml" />
     <Content Include="Views\Emprestimo\Details.cshtml" />
+    <Content Include="Views\Emprestimo\Edit.cshtml" />
+    <Content Include="Views\Shared\Extrato.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -237,6 +244,11 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201806071645275_Alterado.resx">
+      <DependentUpon>201806071645275_Alterado.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
