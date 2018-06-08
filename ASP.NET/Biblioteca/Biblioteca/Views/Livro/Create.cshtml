@@ -14,19 +14,16 @@
         <h4>Cadastro de Livro</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="row">
+        <div class="row background-form">
 
             <div class="row">
-                <div class="input-field col s12">
+                <div class="input-field col s6">
                     <i class="material-icons prefix">library_books</i>
                     @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-library_books" } })
                     @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
                     @Html.LabelFor(model => model.Nome, htmlAttributes: new { @class = "control-label col-md-2" })
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="input-field col s12">
+                <div class="input-field col s6">
                     <i class="material-icons prefix">mode_edit</i>
                     @Html.EditorFor(model => model.Descricao, new { htmlAttributes = new { @class = "form-library_books" } })
                     @Html.ValidationMessageFor(model => model.Descricao, "", new { @class = "text-danger" })
@@ -35,18 +32,15 @@
             </div>
 
             <div class="row">
-                <div class="input-field col s12">
+                <div class="input-field col s6">
                     <i class="material-icons prefix">toc</i>
-                    @Html.EditorFor(model => model.TotalPaginas, new { htmlAttributes = new { @class = "form-library_books" } })
+                    @Html.EditorFor(model => model.TotalPaginas, new { htmlAttributes = new { @class = "form-library_books", @min="0" } })
                     @Html.ValidationMessageFor(model => model.TotalPaginas, "", new { @class = "text-danger" })
                     @Html.LabelFor(model => model.TotalPaginas, htmlAttributes: new { @class = "control-label col-md-2" })
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="input-field col s12">
+                <div class="input-field col s6">
                     <i class="material-icons prefix">add</i>
-                    @Html.EditorFor(model => model.Quantidade, new { htmlAttributes = new { @class = "form-library_books" } })
+                    @Html.EditorFor(model => model.Quantidade, new { htmlAttributes = new { @class = "form-library_books", @min = "0" } })
                     @Html.ValidationMessageFor(model => model.Quantidade, "", new { @class = "text-danger" })
                     @Html.LabelFor(model => model.Quantidade, htmlAttributes: new { @class = "control-label col-md-2" })
                 </div>
@@ -56,20 +50,21 @@
                 <div class="input-field col s3">
                     @Html.DropDownListFor(model => model.AutorId, new SelectList(ViewBag.Autores, "Value", "Text"), "Selecione um autor")
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s3">
+
+                <div class="input-field col s3 offset-s1">
                     @Html.DropDownListFor(model => model.CategoriaId, new SelectList(ViewBag.Categorias, "Value", "Text"), "Selecione uma categoria")
                 </div>
-            </div>
-            <div class="form-group center-align">
-                <button class="btn waves-effect waves-light" type="submit" name="action">
-                    Cadastrar
-                    <i class="material-icons right">send</i>
-                </button>
+                <div class="input-field col s3 offset-s1">
+                    <button class="btn waves-effect waves-light blue-grey" type="submit" name="action">
+                        Cadastrar
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
             </div>
         </div>
+
     </div>
+
 }
 
 @*<div>

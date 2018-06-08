@@ -7,32 +7,32 @@
 
 <h2>Cadastrar nova categoria</h2>
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
-    <div class="row">
-        <hr />
+    <hr />
+    <div class="row background-form">
+
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="row">
-            
-            <div class="input-field col s8">
+            <div class="input-field col s6">
                 <i class="material-icons prefix">library_books</i>
                 @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
                 @Html.LabelFor(model => model.Nome, htmlAttributes: new { @class = "control-label col-md-2" })
             </div>
+            <div class="input-field col s3 ofsset-s3" style="margin-top:32px;">
+                <button class="btn waves-effect waves-light blue-grey" type="submit" name="action">
+                    Cadastrar
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
         </div>
 
-        <div class="form-group center-align">
-            <button class="btn waves-effect waves-light" type="submit" name="action">
-                Criar
-                <i class="material-icons right">send</i>
-            </button>
-        </div>
+        
     </div>
 }
 
 @*<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>*@
+        @Html.ActionLink("Back to List", "Index")
+    </div>*@

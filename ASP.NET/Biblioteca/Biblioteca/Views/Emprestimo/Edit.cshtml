@@ -20,19 +20,21 @@
         @Html.HiddenFor(model => model.DataDevolucao)
         @Html.HiddenFor(model => model.DataEmprestimo)
 
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.DataDeEntregaDoLivro, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.DataDeEntregaDoLivro, new { htmlAttributes = new { @class = "form-control data" } })
-                @Html.ValidationMessageFor(model => model.DataDeEntregaDoLivro, "", new { @class = "text-danger" })
+        <div class="row background-form">
+            <div class="row">
+                <div class="col s6">
+                    @Html.LabelFor(model => model.DataDeEntregaDoLivro, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.DataDeEntregaDoLivro, new { htmlAttributes = new { @class = "form-control data" } })
+                        @Html.ValidationMessageFor(model => model.DataDeEntregaDoLivro, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col s3" style="margin-top: 25px;">
+                    <input type="submit" value="Salvar" class="btn btn-default" />
+                </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Salvar" class="btn btn-default" />
-            </div>
+
         </div>
     </div>
 }

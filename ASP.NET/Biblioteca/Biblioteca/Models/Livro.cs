@@ -11,6 +11,7 @@ namespace Biblioteca.Models
 {
     public class Livro
     {
+        private BibliotecaDB db = new BibliotecaDB();
         [Key]
         public int Id { get; set; }
 
@@ -59,5 +60,10 @@ namespace Biblioteca.Models
                 }
             }
         }
+        public Categoria RetornaCategoria(int idCategoria)
+        {
+            return db.Categorias.Where(x => x.Id == idCategoria).FirstOrDefault();
+        }
+
     }
 }

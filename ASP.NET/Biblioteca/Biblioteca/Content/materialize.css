@@ -3,6 +3,12 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
+.background-form {
+    background-color: #cfd8dc;
+    border-radius: 10px;
+}
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -4914,7 +4920,7 @@ small {
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
-  color: #ffab40;
+  color: white;
   margin-right: 24px;
   -webkit-transition: color .3s ease;
   transition: color .3s ease;

@@ -10,7 +10,7 @@
 <h2>Lista de categorias</h2>
 
 <p>
-    @Html.ActionLink("Cadastrar categoria", "Create", null, new { @class = "waves-effect waves-light btn" })
+    @Html.ActionLink("Cadastrar categoria", "Create", null, new { @class = "waves-effect waves-light btn blue-grey" })
 </p>
 
 @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "__AjaxAntiForgeryForm " }))
@@ -35,7 +35,7 @@
                     @Html.DisplayFor(modelItem => item.Nome)
                 </td>
                 <td>
-                    <a class="btn-floating btn-large waves-effect waves-light red" href="@Url.Action("Edit", "Categoria",new {id = item.Id })">
+                    <a class="btn-floating btn-large waves-effect waves-light blue" href="@Url.Action("Edit", "Categoria",new {id = item.Id })">
                         <i class="material-icons">mode_edit</i>
                     </a>
                 </td>

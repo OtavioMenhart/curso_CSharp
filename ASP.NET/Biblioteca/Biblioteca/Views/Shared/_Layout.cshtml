@@ -4,18 +4,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Meu Aplicativo ASP.NET</title>
+    <title>@ViewBag.Title - Biblioteca</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body class="blue lighten-4" style="padding-top: 0">
+<body class="blue-grey lighten-3" style="padding-top: 0">
     <div class="navbar-fixed">
 
         <nav>
-            <div class="nav-wrapper">
+            <div class="nav-wrapper blue-grey">
                 <a class="brand-logo right">Biblioteca</a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="@Url.Action("Index", "Home")" class="material-icons">library_books</a></li>
                     <li>@Html.ActionLink("Livro", "Index", "Livro")</li>
                     <li>@Html.ActionLink("Autor", "Index", "Autor")</li>
                     <li>@Html.ActionLink("Categoria", "Index", "Categoria")</li>
@@ -48,11 +49,11 @@
             });
         });
     </script>
-    <div class="container body-content">
+    <div class="container body-content ">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Meu Aplicativo ASP.NET</p>
+        <div class="container" style="position:absolute; bottom:40px;"><div class="col s12"><hr/></div></div>
+        <footer style="position:absolute; bottom: 0;">
+            <p>&copy; @DateTime.Now.Year - Desenvolvido por Otávio Menhart</p>
         </footer>
     </div>
 </body>

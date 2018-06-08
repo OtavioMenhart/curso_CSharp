@@ -7,9 +7,9 @@
 
 <h2>Lista de Autores</h2>
 
-@*<p>
-        @Html.ActionLink("Create New", "Create")
-    </p>*@
+<p>
+    @Html.ActionLink("Cadastrar Autor", "Create", null, new { @class = "waves-effect waves-light btn blue-grey" })
+</p>
 
 @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "__AjaxAntiForgeryForm" }))
 {
@@ -33,7 +33,7 @@
                     @Html.DisplayFor(modelItem => item.Nome)
                 </td>
                 <td>
-                    <a class="btn-floating btn-large waves-effect waves-light red" href="@Url.Action("Edit", "Autor",new {id = item.Id })">
+                    <a class="btn-floating btn-large waves-effect waves-light blue" href="@Url.Action("Edit", "Autor",new {id = item.Id })">
                         <i class="material-icons">mode_edit</i>
                     </a>
                 </td>
