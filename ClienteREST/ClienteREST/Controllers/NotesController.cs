@@ -33,7 +33,16 @@ namespace ClienteREST.Controllers
         // GET: Notes/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            HttpResponseMessage response = client.GetAsync($"api/notes/{id}").Result;
+            Notes note = response.Content.ReadAsAsync<Notes>().Result;
+            if(note != null)
+            {
+                return View(note);
+            }
+            else
+            {
+                return HttpNotFound();
+            }
         }
 
         // GET: Notes/Create
@@ -44,13 +53,20 @@ namespace ClienteREST.Controllers
 
         // POST: Notes/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Notes note)
         {
             try
             {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
+                HttpResponseMessage response = client.PostAsJsonAsync<Notes>("api/notes", note).Result;
+                if (response.StatusCode == System.Net.HttpStatusCode.Created)
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    ViewBag.Error = "Error while creating note";
+                    return View();
+                }
             }
             catch
             {
@@ -61,18 +77,34 @@ namespace ClienteREST.Controllers
         // GET: Notes/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            HttpResponseMessage response = client.GetAsync($"api/notes/{id}").Result;
+            Notes note = response.Content.ReadAsAsync<Notes>().Result;
+            if (note != null)
+            {
+                return View(note);
+            }
+            else
+            {
+                return HttpNotFound();
+            }
         }
 
         // POST: Notes/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(int id, Notes note)
         {
             try
             {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
+                HttpResponseMessage response = client.PutAsJsonAsync<Notes>($"api/notes/{id}", note).Result;
+                if (response.StatusCode == System.Net.HttpStatusCode.NoContent)
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    ViewBag.Error = "Error while creating note";
+                    return View();
+                }
             }
             catch
             {
@@ -83,18 +115,34 @@ namespace ClienteREST.Controllers
         // GET: Notes/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            HttpResponseMessage response = client.GetAsync($"api/notes/{id}").Result;
+            Notes note = response.Content.ReadAsAsync<Notes>().Result;
+            if (note != null)
+            {
+                return View(note);
+            }
+            else
+            {
+                return HttpNotFound();
+            }
         }
 
         // POST: Notes/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(int id, Notes note)
         {
             try
             {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
+                HttpResponseMessage response = client.DeleteAsync($"api/notes/{id}").Result;
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    ViewBag.Error = "Error while creating note";
+                    return View();
+                }
             }
             catch
             {
