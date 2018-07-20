@@ -12,5 +12,16 @@ namespace ServicoWebApiPaginacao.Controllers
     {
         private AulaContext db = new AulaContext();
 
+        public IHttpActionResult PostCurso(Curso curso)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            db.Cursos.Add(curso);
+            db.SaveChanges();
+
+            return CreatedAtRoute("DefaultApi", new { id = curso.Id }, curso);
+        }
     }
 }
