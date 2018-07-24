@@ -12,6 +12,7 @@ namespace ServicoWebApiPaginacao.Controllers
     {
         private AulaContext db = new AulaContext();
 
+        //POST
         public IHttpActionResult PostCurso(Curso curso)
         {
             if (!ModelState.IsValid)
@@ -22,6 +23,45 @@ namespace ServicoWebApiPaginacao.Controllers
             db.SaveChanges();
 
             return CreatedAtRoute("DefaultApi", new { id = curso.Id }, curso);
+        }
+
+        //Get único registro
+        public IHttpActionResult GetCurso(int id)
+        {
+            if(id <= 0)
+            {
+                return BadRequest("O ID deve ser um número maior que zero");
+            }
+
+            var curso = db.Cursos.Find(id);
+
+            if (curso == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(curso);
+        }
+
+        //Put
+        public IHttpActionResult PutCurso(int id, Curso curso)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            if(id != curso.Id)
+            {
+                return BadRequest("O ID informado na URL é diferente do ID informado no corpo da requisição");
+            }
+            if(db.Cursos.Count(c => c.Id == id) == 0)
+            {
+                return NotFound();
+            }
+            db.Entry(curso).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
+
+            return StatusCode(HttpStatusCode.NoContent);
         }
     }
 }
