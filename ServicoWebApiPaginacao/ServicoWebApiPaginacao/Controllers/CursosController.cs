@@ -28,7 +28,7 @@ namespace ServicoWebApiPaginacao.Controllers
         //Get único registro
         public IHttpActionResult GetCurso(int id)
         {
-            if(id <= 0)
+            if (id <= 0)
             {
                 return BadRequest("O ID deve ser um número maior que zero");
             }
@@ -50,11 +50,11 @@ namespace ServicoWebApiPaginacao.Controllers
             {
                 return BadRequest(ModelState);
             }
-            if(id != curso.Id)
+            if (id != curso.Id)
             {
                 return BadRequest("O ID informado na URL é diferente do ID informado no corpo da requisição");
             }
-            if(db.Cursos.Count(c => c.Id == id) == 0)
+            if (db.Cursos.Count(c => c.Id == id) == 0)
             {
                 return NotFound();
             }
@@ -62,6 +62,29 @@ namespace ServicoWebApiPaginacao.Controllers
             db.SaveChanges();
 
             return StatusCode(HttpStatusCode.NoContent);
+        }
+
+        //Delete
+        public IHttpActionResult DeleteCurso(int id)
+        {
+            if (id <= 0)
+                return BadRequest("O id deve ser um número maior que zero.");
+
+            var curso = db.Cursos.Find(id);
+
+            if (curso == null)
+                return NotFound();
+
+            db.Cursos.Remove(curso);
+            db.SaveChanges();
+
+            return StatusCode(HttpStatusCode.NoContent);
+        }
+
+        // GET: api/Curso
+        public IQueryable<Curso> GetCursos()
+        {
+            return db.Cursos;
         }
     }
 }
