@@ -82,9 +82,15 @@ namespace ServicoWebApiPaginacao.Controllers
         }
 
         // GET: api/Curso
-        public IQueryable<Curso> GetCursos()
+        public IHttpActionResult GetCursos(int pagina = 1, int tamanhoPagina = 10)
         {
-            return db.Cursos;
+            /*
+             * skip - avançar uma quantidade de registros
+             * take - pegar apenas uma quantidade de registros
+             */
+
+            var cursos = db.Cursos.OrderBy(c => c.DataPublicacao).Skip(tamanhoPagina * (pagina - 1)).Take(tamanhoPagina);
+            return Ok(cursos);
         }
     }
 }
