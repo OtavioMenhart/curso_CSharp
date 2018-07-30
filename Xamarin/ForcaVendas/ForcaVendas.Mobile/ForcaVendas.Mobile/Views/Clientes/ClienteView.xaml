@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ForcaVendas.Mobile.Views.Clientes.ClienteView"
+             Title="{Binding Title}">
+    <StackLayout>
+
+        <Label Text="Apelido/Nome fantasia" />
+        <Entry Text="{Binding ApelidoNomeFantasia}" />
+
+        <Label Text="Nome completo/Razão social" />
+        <Entry Text="{Binding NomeCompletoRazaoSocial}" />
+
+        <Label Text="CPF/CNPJ" />
+        <Entry Text="{Binding CPFCNPJ}" />
+
+        <Button Text="Salvar"
+                Command="{Binding SalvarCommand}" />
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="btnVoltar"
+                    Grid.Column="0"
+                    Text="Voltar">
+                
+            </Button>
+            <Button Grid.Column="1"
+                    Text="Excluir" />
+        </Grid>
+
+    </StackLayout>
+</ContentPage>
