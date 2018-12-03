@@ -1,0 +1,106 @@
+﻿@model IEnumerable<EngReversa.Models.TB_CLIENTE>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_NOME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_ENDERECO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_PONTO_REFERENCIA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_NUMERO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_CEP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_CPF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_RG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_BAIRRO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_CIDADE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_TELEFONE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_EMAIL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_DATA_CADASTRO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_DATA_NASCIMENTO)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_CLIENTE_NOME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_CLIENTE_ENDERECO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_CLIENTE_PONTO_REFERENCIA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_CLIENTE_NUMERO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_CLIENTE_CEP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_CLIENTE_CPF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_CLIENTE_RG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_CLIENTE_BAIRRO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_CLIENTE_CIDADE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_CLIENTE_TELEFONE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_CLIENTE_EMAIL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_CLIENTE_DATA_CADASTRO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_CLIENTE_DATA_NASCIMENTO)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TB_CLIENTE_CODIGO }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TB_CLIENTE_CODIGO }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TB_CLIENTE_CODIGO })
+        </td>
+    </tr>
+}
+
+</table>
