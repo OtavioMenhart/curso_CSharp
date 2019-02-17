@@ -10,6 +10,7 @@ namespace ServicoWebApiPaginacao.Models
     {
         public AulaContext() : base("DevMediaLocal")
         {
+            //Database.Log = d => System.Diagnostics.Debug.WriteLine(d);
         }
 
         public DbSet<Curso> Cursos { get; set; }

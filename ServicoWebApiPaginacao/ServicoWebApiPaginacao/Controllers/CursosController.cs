@@ -95,6 +95,17 @@ namespace ServicoWebApiPaginacao.Controllers
             if (pagina > totalPaginas)
                 return BadRequest("A página solicitada não existe.");
 
+            System.Web.HttpContext.Current.Response.AddHeader("X-Pagination-TotalPages", totalPaginas.ToString());
+
+            if (pagina > 1)
+                System.Web.HttpContext.Current.Response.AddHeader("X-Pagination-PreviousPage", 
+                    Url.Link("DefaultApi", new{ pagina = pagina - 1, tamanhoPagina = tamanhoPagina }));
+
+            if (pagina < totalPaginas)
+                System.Web.HttpContext.Current.Response.AddHeader("X-Pagination-NextPage", 
+                    Url.Link("DefaultApi", new{ pagina = pagina + 1, tamanhoPagina = tamanhoPagina}));
+
+
             /*
              * skip - avançar uma quantidade de registros
              * take - pegar apenas uma quantidade de registros

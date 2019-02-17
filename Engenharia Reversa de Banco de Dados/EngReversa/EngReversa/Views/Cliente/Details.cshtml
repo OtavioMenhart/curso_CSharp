@@ -1,0 +1,123 @@
+﻿@model EngReversa.Models.TB_CLIENTE
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TB_CLIENTE</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_NOME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_CLIENTE_NOME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_ENDERECO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_CLIENTE_ENDERECO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_PONTO_REFERENCIA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_CLIENTE_PONTO_REFERENCIA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_NUMERO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_CLIENTE_NUMERO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_CEP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_CLIENTE_CEP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_CPF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_CLIENTE_CPF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_RG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_CLIENTE_RG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_BAIRRO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_CLIENTE_BAIRRO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_CIDADE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_CLIENTE_CIDADE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_TELEFONE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_CLIENTE_TELEFONE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_EMAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_CLIENTE_EMAIL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_DATA_CADASTRO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_CLIENTE_DATA_CADASTRO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TB_CLIENTE_DATA_NASCIMENTO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TB_CLIENTE_DATA_NASCIMENTO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TB_CLIENTE_CODIGO }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
